@@ -13,7 +13,7 @@ import {
 import { dashboard } from '@/routes';
 import { type NavGroup, type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid, Store } from 'lucide-react';
+import { BookOpen, Folder, LayoutGrid, Store, User } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavGroup[] = [
@@ -31,9 +31,14 @@ const mainNavItems: NavGroup[] = [
         title: 'Master Data',
         items: [
             {
-                title: 'Store',
-                href: '/store/index',
-                icon: Store,
+                title: 'User',
+                href: '/user/index',
+                icon: User,
+            },
+            {
+                title: 'Grade',
+                href: '/grade/index',
+                icon: User,
             },
         ],
     },

@@ -15,8 +15,7 @@
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "laravel/wayfinder": "^0.1.9",
-        "yajra/laravel-datatables": "10.0",
-        "yaza/laravel-repository-service": "^4.0"
+        "yaza/laravel-repository-service": "^6.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

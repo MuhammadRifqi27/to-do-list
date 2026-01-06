@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\StoreController;
+use App\Http\Controllers\GradeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Laravel\Fortify\Features;
@@ -16,9 +17,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
 
-    Route::prefix('store')->name('store.')->group(function () {
-        Route::get('index', [StoreController::class, 'index'])->name('index');
-
+    Route::prefix('user')->name('user.')->group(function () {
+        Route::get('index', [UserController::class, 'index'])->name('index');
+    });
+    Route::prefix('grade')->name('grade.')->group(function () {
+        Route::get('index', [GradeController::class, 'index'])->name('index');
     });
 });
 
